@@ -4,6 +4,8 @@
     <h1>Démo Vue.js</h1>
     <router-link to="/databinding">Databinding</router-link>
     <router-link to="/events">Events</router-link>
+    <router-link to="/componentscommunication">Communication</router-link>
+    <router-link to="/vuex">Vuex</router-link>
   </div>
 </template>
 

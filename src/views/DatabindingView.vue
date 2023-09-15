@@ -3,7 +3,7 @@
   <h4 v-once>{{ getRandomSentence() }}</h4>
   <div v-once>
     <h3>v-bind:</h3>
-    <img class="lowqimage" v-bind:src="getImgSrc()" />
+    <img v-bind:class="imgClass" v-bind:src="getImgSrc()" />
   </div>
   <div v-html="htmlContent"></div>
   <div>
@@ -27,9 +27,10 @@ export default {
   name: 'DatabindingView',
   data() {
     return {
+      imgClass: 'lowqimage',
       sectionTitle: 'Databinding',
       htmlContent: '<h3>v-html ! </h3>',
-      counter: [0, 0]
+      counter: [0, 0],
     };
   },
   computed: {

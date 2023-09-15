@@ -8,7 +8,7 @@
     <h3>v-on et v-once</h3>
     <button v-on:click="increaseCounter">+1</button><br />
     <p>Ce texte sera mis à jour, compteur: {{ counter }}</p>
-    <p v-once="counter">Ce texte ne sera pas mis à jour, compteur: {{ counter }}</p>
+    <p v-once>Ce texte ne sera pas mis à jour, compteur: {{ counter }}</p>
   </div>
   <div>
     <h3>v-if, v-else-if et v-else</h3>
@@ -28,7 +28,7 @@
     <h3>v-for</h3>
     <input v-model="newName" v-on:keyup.enter="names.push(newName)" />
     <ul>
-      <li v-for="(name, index) in names" v-bind:key="index">
+      <li v-for="name in names">
         {{ name }}
       </li>
     </ul>
